@@ -1,0 +1,1 @@
+select avg(note) from notas,alumno where notas.idAlumno = alumno.dni and idMateria = (select id from materia,alumno where materia.curso = alumno.curso);
