@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 -- Base de datos: `school`
 --
 -- --------------------------------------------------------
-`USE school`
+`USE school`;
 --
 -- Estructura de tabla para la tabla `alumn`
 --
