@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --text-color:#040407;
+    --background:#ebecf4;
+    --primary-clor:#2255ff;
+    --secondary-color:#d8dae9;
+    --accent:#21243b;
+}
+
+body{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
+
+h1{
+        color: var(--text-color);
+}
+
+input{
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    border: var(--primary-clor) 2px solid;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+}
+
+select{
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    border: var(--primary-clor) 2px solid;
+}
+
+.enviar{
+    background-color: var(--accent);
+    color: var(--background);
+    width: 100px;
+}
