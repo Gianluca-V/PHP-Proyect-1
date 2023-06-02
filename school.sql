@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-06-2023 a las 02:17:44
+-- Tiempo de generación: 02-06-2023 a las 19:40:04
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.6
 
@@ -44,7 +44,7 @@ INSERT INTO `alumn` (`dni`, `name`, `surname`, `average`, `image`, `course`) VAL
 ('37890125', 'Charlotte', 'Perez', 5.916666666666667, 'image.jpg', 1),
 ('38967892', 'Ethan', 'Reyes', 6.75, 'image.jpg', 3),
 ('39012347', 'Ava', 'Ramirez', 7.166666666666667, 'image.jpg', 1),
-('41234569', 'Victoria', 'Ramirez', 9.583333333333334, 'image.jpg', 2),
+('41234569', 'Victoria', 'Ramirez', 8.733333333333333, 'image.jpg', 2),
 ('41567892', 'Alexander', 'Rodriguez', 6.333333333333333, 'image.jpg', 3),
 ('42345670', 'William', 'Lopez', 6.416666666666667, 'image.jpg', 2),
 ('42345678', 'John', 'Doe', 8.166666666666666, 'image.jpg', 2),
@@ -134,7 +134,7 @@ INSERT INTO `notes` (`id`, `subjectId`, `alumnId`, `note`) VALUES
 (113, 2, '96789014', 8),
 (114, 3, '96789014', 2),
 (115, 4, '96789014', 6),
-(119, 5, '41234569', 11),
+(119, 5, '41234569', 9),
 (120, 6, '41234569', 9),
 (121, 7, '41234569', 9),
 (122, 8, '41234569', 9),
@@ -230,10 +230,10 @@ INSERT INTO `notes` (`id`, `subjectId`, `alumnId`, `note`) VALUES
 (281, 2, '96789014', 4),
 (282, 3, '96789014', 8),
 (283, 4, '96789014', 7),
-(287, 5, '41234569', 11),
+(287, 5, '41234569', 10),
 (288, 6, '41234569', 9),
-(289, 7, '41234569', 12),
-(290, 8, '41234569', 12),
+(289, 7, '41234569', 10),
+(290, 8, '41234569', 10),
 (294, 5, '42345670', 8),
 (295, 6, '42345670', 7),
 (296, 7, '42345670', 8),
@@ -329,7 +329,7 @@ INSERT INTO `notes` (`id`, `subjectId`, `alumnId`, `note`) VALUES
 (455, 5, '41234569', 2),
 (456, 6, '41234569', 9),
 (457, 7, '41234569', 10),
-(458, 8, '41234569', 12),
+(458, 8, '41234569', 8),
 (462, 5, '42345670', 9),
 (463, 6, '42345670', 4),
 (464, 7, '42345670', 5),
@@ -393,7 +393,10 @@ INSERT INTO `notes` (`id`, `subjectId`, `alumnId`, `note`) VALUES
 (567, 9, '98901234', 7),
 (568, 10, '98901234', 7),
 (569, 11, '98901234', 2),
-(570, 12, '98901234', 3);
+(570, 12, '98901234', 3),
+(574, 5, '41234569', 9),
+(575, 5, '41234569', 9),
+(576, 8, '41234569', 9);
 
 --
 -- Disparadores `notes`
@@ -501,7 +504,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT de la tabla `notes`
 --
 ALTER TABLE `notes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=574;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=577;
 
 --
 -- AUTO_INCREMENT de la tabla `subject`
