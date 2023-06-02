@@ -6,6 +6,14 @@
     text-decoration: none;
 }
 
+:root{
+    --text-color:#040407;
+    --background:#ebecf4;
+    --primary-clor:#2255ff;
+    --secondary-color:#d8dae9;
+    --accent:#21243b;
+}
+
 a{
     color:#000;
 }
