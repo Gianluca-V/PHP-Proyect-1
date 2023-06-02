@@ -25,7 +25,7 @@
             </div>
         </a>
 
-        <a href="SolicitudDeCurso.php" class="cargarAlumno container-link"> 
+        <a href="BuscarCurso.php" class="cargarAlumno container-link"> 
             <div>
                 Mostrar Mejor Alumno De curso
             </div>
