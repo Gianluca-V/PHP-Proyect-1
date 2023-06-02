@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleCarga.css">
     <title>Campus</title>
 </head>
 <body>
 
        <form method="POST">
+        <h1>Carga de Alumno</h1>
         <input type="text" placeholder="Nombre" name="nombre">
         <input type="text" placeholder="Apellido" name="apellido">
         <input type="text" placeholder="DNI" name="dni">
@@ -20,11 +22,11 @@
 
                 <option value ="3">7mo 1ra ADO</option>
 
-        </select>
+            </select>
 
         <input type="text" placeholder="Imágen del alumno (link)" name="imagen">
 
-        <input type="submit" value="Enviar" name="enviarForm">
+        <input type="submit" value="Enviar" name="enviarForm" class="enviar">
 
         </form>
 
