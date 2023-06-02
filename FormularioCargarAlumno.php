@@ -20,7 +20,7 @@
 
                 <option value ="3">7mo 1ra ADO</option>
 
-            </select>
+        </select>
 
         <input type="text" placeholder="Imágen del alumno (link)" name="imagen">
 
