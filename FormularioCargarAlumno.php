@@ -14,19 +14,11 @@
         <input type="text" placeholder="DNI" name="dni">
         <select name="curso">
 
-                <option>1ro</option>
+                <option value ="1">4to 1ra PROG</option>
 
-                <option>2do</option>
+                <option value ="2">6to 2da IPP</option>
 
-                <option>3ro</option>
-
-                <option>4to</option>
-
-                <option>5to</option>
-
-                <option>6to</option>
-
-                <option>7mo</option>
+                <option value ="3">7mo 1ra ADO</option>
 
             </select>
 
@@ -42,23 +34,21 @@
         
 
         if(isset($_POST['enviarForm'])){         
-            echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
             $nombre = mysqli_real_escape_string($conexion, $_POST['nombre']);
             $apellido = mysqli_real_escape_string($conexion, $_POST['apellido']);
             $dni = mysqli_real_escape_string($conexion, $_POST['dni']);
             $curso = mysqli_real_escape_string($conexion, $_POST['curso']);
             $imagen = mysqli_real_escape_string($conexion, $_POST['imagen']);
 
-            $query_consulta=mysqli_query($conexion, "SELECT * FROM alumn WHERE
-            dni='$dni'");
+            $query_consulta=mysqli_query($conexion, "SELECT * FROM alumn WHERE dni='$dni'");
             $fila=mysqli_num_rows($query_consulta);
             if($fila == 1){ 
                 mysqli_error($conexion);
                 echo 'El usuario ya existe. Intente nuevamente';
             }
             else{
-                $query_consulta=mysqli_query($conexion, "INSERT INTO alumn (name, surname, dni, course, image)
-                                VALUES('$nombre', '$apellido', '$dni', '$curso', '$imagen')");
+                $query_consulta=mysqli_query($conexion, "INSERT INTO alumn (dni, name, surname, image, course)
+                                VALUES('$dni', '$nombre', '$apellido',  '$imagen', '$curso')");
 
                 
 
