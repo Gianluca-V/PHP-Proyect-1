@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --text-color:#040407;
+    --background:#ebecf4;
+    --primary-clor:#2255ff;
+    --secondary-color:#d8dae9;
+    --accent:#21243b;
+}
+
+body{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.materias{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
