@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="css/styleSolicitudDeCurso.css">
     <title>Document</title>
 </head>
 <body>
     <section>
-        <h2>Mejor alumno por curso</h2>
+        
         <div class="materias">
-       
+        <h2>Mejor alumno por curso</h2>
                 <?php 
                  $courseId = $_POST["curso"];
 
@@ -23,7 +23,7 @@
                 $result2=mysqli_query($conexion, $consulta);
                 $mostrar2=mysqli_fetch_array($result2);
 
-                echo '<tr><td>'.$mostrar2['name'].' '.$mostrar2['surname'].' '.$mostrar2['dni'].'</td>  <td>'.$mostrar2['average'].' '.$mostrar2['image'].'</td></tr>' ;
+                echo '<tr><td>'.$mostrar2['name'].' '.$mostrar2['surname'].'<br> DNI: '.$mostrar2['dni'].'</td> <br> <td> Promedio: '.$mostrar2['average'].' <br> <img src="'.$mostrar2['image'].'" alt="Imgaen"> </td></tr>' ;
                 
                 $dni = $mostrar2['dni'];
 
@@ -37,7 +37,7 @@
                     <th>Nota</th>
                 </thead>
                 <tbody>
-
+    
                 <?php
                 while($mostrar3=mysqli_fetch_array($result3)){
                 ?>
