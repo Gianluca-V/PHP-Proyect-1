@@ -23,7 +23,7 @@
                 $result2=mysqli_query($conexion, $consulta);
                 $mostrar2=mysqli_fetch_array($result2);
 
-                echo '<tr><td>'.$mostrar2['name'].' '.$mostrar2['surname'].'<br> DNI: '.$mostrar2['dni'].'</td> <br> <td> Promedio: '.$mostrar2['average'].' <br> <img src="'.$mostrar2['image'].'" alt="Imgaen"> </td></tr>' ;
+                echo '<div class="data"><tr><td>'.$mostrar2['name'].' '.$mostrar2['surname'].'<br><br> DNI: '.$mostrar2['dni'].'</td> <br><br> <td> Promedio: '.$mostrar2['average'].' <br><br> <img src="'.$mostrar2['image'].'" alt="Imgaen"> </td></tr> </div>' ;
                 
                 $dni = $mostrar2['dni'];
 

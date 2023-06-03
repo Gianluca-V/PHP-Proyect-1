@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleMostrarAlumno.css">
     <title>Document</title>
 </head>
 <body>
     <form action="" method="post">
         <label for="1">DNI del alumno</label>
         <input type="number" name="dni" id="1">
-        <input type="submit" name="enviar">
+        <input type="submit" name="enviar"  class="enviar">
     </form>
     <?php
         
